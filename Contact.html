@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-page="contact">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexaStudio – Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav>
+    <div class="nav-brand">Nexa<span>Studio</span></div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"   class="nav-link" data-page="home">Home</a></li>
+      <li><a href="about.html"   class="nav-link" data-page="about">About</a></li>
+      <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════ MAIN CONTENT ══════════ -->
+  <main class="page">
+    <section>
+      <div class="contact-wrap">
+
+        <!-- Left: contact info -->
+        <div class="contact-info">
+          <div class="tag">
+            <i class="fa-regular fa-envelope"></i>&nbsp; Get in touch
+          </div>
+          <h2>Let's talk about your project.</h2>
+          <p>
+            Fill in the form and we'll get back to you within one business day.
+            No sales pressure — just an honest conversation.
+          </p>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div>
+              <h5>Email</h5>
+              <p>hello@nexastudio.io</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h5>Phone</h5>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h5>Location</h5>
+              <p>Remote-first · HQ in Bengaluru, India</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+            <div>
+              <h5>Response time</h5>
+              <p>Within 1 business day</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="form-card">
+          <h3>Send us a message</h3>
+
+          <!-- Success banner (shown after valid submission) -->
+          <div class="success-banner" id="successBanner">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Message sent! We'll be in touch soon.</span>
+          </div>
+
+          <!-- Contact Form -->
+          <form name="contactForm" id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Arjun">
+                <p class="err-msg" id="err-fname">Please enter your first name.</p>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Mehta">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="arjun@example.com">
+              <p class="err-msg" id="err-email">Please enter a valid email address.</p>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service you need</label>
+              <select id="service" name="service">
+                <option value="">— Select a service —</option>
+                <option>UI / UX Design</option>
+                <option>Frontend Development</option>
+                <option>Backend &amp; APIs</option>
+                <option>SEO &amp; Analytics</option>
+                <option>Full Project</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message"
+                placeholder="Tell us about your project — goals, timeline, budget…"></textarea>
+              <p class="err-msg" id="err-message">Please enter your message.</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary"
+              style="width:100%; justify-content:center; margin-top:.4rem;">
+              Send Message &nbsp;<i class="fa-regular fa-paper-plane"></i>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <p class="foot-brand">Nexa<span>Studio</span></p>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>© 2024 NexaStudio. Built for Maincrafts Technology Internship – Task 2.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
