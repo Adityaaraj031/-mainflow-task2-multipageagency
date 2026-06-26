@@ -19,8 +19,8 @@ hamburger.addEventListener('click', function () {
    (highlights the link for the current page)
 ──────────────────────────────────── */
 function setActiveLink() {
-  const page     = document.body.dataset.page;   // e.g. "home"
-  const links    = document.querySelectorAll('.nav-link');
+  const page  = document.documentElement.dataset.page || document.body.dataset.page;
+  const links = document.querySelectorAll('.nav-link');
   links.forEach(a => {
     a.classList.toggle('active', a.dataset.page === page);
   });
